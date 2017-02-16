@@ -4,7 +4,7 @@ This is a simple app to help keep track of pills. I recently parted ways with my
 
 ## Example:
 
-![](https://github.com/bilbof/pilltracker/tree/master/public/images/example.png)
+![](https://github.com/bilbof/pilltracker/blob/master/public/images/example.png?raw=true)
 
 ## Setting up
 
