@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  #app
+    .container
+      medicine(v-for="item in pills" v-bind:pill="item")
+      .add-pill.pill.col-xs-4
+        .new-pill(v-if="showNewPillForm == false")
+          button(v-on:click="openPillForm") Add a new pill
+        .new-pill-form(v-if="showNewPillForm")
+          form(method="post" v-on:submit="addPill")
+            .form-group
+              label What is the pill's name?
+              input(v-model.trim="newPill.name")
+            .form-group
+              label How many do you have currently?
+              input(v-model.number="newPill.stock" type="number" )
+            .form-group
+              label How many do you take per dosage?
+              input(type="number" v-model.number="newPill.dose_amount")
+            .form-group
+              label How many doses do you take per day?
+              input(type="number" v-model.number="newPill.doses_per_day")
+            button Add new pill
+          
+  
+        
+  script(src="https://unpkg.com/vue/dist/vue.js")
+  script(src="/javascripts/vendor/moment.min.js")
+  script(src="/javascripts/app.js")

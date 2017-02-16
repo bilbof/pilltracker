@@ -1,0 +1,75 @@
+// sass --watch public/stylesheets:public/stylesheets
+
+$background: #000
+$sub-background: #4c4c4c
+$dividing-grey: #b2b2b2
+$dividing-black: #2b2b2b
+$info-white: #fff
+$chart-white: gainsboro
+$stock-up: #53d769
+$stock-down: #fc3d39
+$grey: #F4F5F5
+$blue: rgb(23, 135, 223)
+$ft-white: #fdf8f2
+$ft-bg: #fff1e0
+$money: #46A9A2
+$yellow: rgb(255, 192, 0)
+$orange: rgb(242, 111, 33)
+$green: rgb(70, 169, 162)
+$red: rgb(239, 79, 81)
+$purple: rgb(126, 71, 166)
+$ft-bg-image: repeating-linear-gradient(135deg,#26747a,#26747a 1.5px,transparent 0,transparent 3px)
+$ft-green: #93babd
+$ft-green-dark: #26747a
+$majority: gold
+$minority: silver
+
+body
+  margin: 0
+  color: #808d9c
+  background-image: linear-gradient(-55deg, #f2f4f8 0%, #e7eaf0 100%)
+
+#app
+  color: #808d9c
+  padding: 30px
+  margin: auto
+  text-align: center
+  .pill
+    background: #fff
+    padding: 0 0 20px
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.12)
+    width: 300px
+    margin: 30px 60px 0 0
+    display: flex
+    flex-direction: column
+    border-radius: 4px
+    min-height: 300px
+    button
+      width: 80%
+      margin: 0 auto
+    .new-pill
+      position: relative
+      top: 50%
+      transform: translateY(450%)
+      input[type="number"]
+        width: 10px
+  .medicine-history
+    position: relative
+    height: 80px
+    a
+      cursor: pointer
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      border-top: 1px solid
+      padding-top: 15px
+  .history
+    padding-top: 5px
+    ul
+      list-style-type: none
+      -webkit-margin-before: 0
+      -webkit-margin-after: 0
+      -webkit-margin-start: 0
+      -webkit-margin-end: 0
+      -webkit-padding-start: 0
